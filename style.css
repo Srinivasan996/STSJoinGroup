@@ -1,0 +1,382 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Primary font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #0a5f5f; /* Dark green line */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.main-logo {
+    max-width: 300px; /* Adjust based on your logo's aspect ratio */
+    height: auto;
+}
+
+header h1 {
+    color: #0a5f5f;
+    margin: 0;
+    font-size: 2.2em;
+    font-family: 'Noto Sans Tamil', sans-serif; /* For better display of Tamil text if present */
+}
+
+/* Main Content Styles */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #0a5f5f;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #4CAF50; /* WhatsApp green */
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+h3 {
+    color: #0a5f5f;
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.note {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+    border-left: 4px solid #4CAF50;
+    padding-left: 10px;
+}
+
+/* WhatsApp Buttons */
+.button-group {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-bottom: 30px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366; /* WhatsApp brand green */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px; /* Pill shape */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851; /* Darker green on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+.whatsapp-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
+.whatsapp-direct {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.whatsapp-number {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-number:hover {
+    text-decoration: underline;
+}
+
+/* Language Toggle Buttons */
+.content-toggle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.toggle-button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-button.active {
+    background-color: #0a5f5f; /* Dark green for active */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.toggle-button:hover:not(.active) {
+    background-color: #d0d0d0;
+}
+
+.content-panel {
+    display: none; /* Hidden by default */
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.content-panel.active {
+    display: block; /* Shown when active */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #777;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
+.google-maps .social-icon {
+    /* For Google Maps icon, you might not want invert if it's already white or specific color */
+    filter: none; /* Remove filter if icon is already white or colored */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .main-logo {
+        max-width: 250px;
+    }
+
+    .whatsapp-button {
+        width: 80%; /* Make buttons full width on small screens */
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .main-logo {
+        max-width: 200px;
+    }
+
+    .whatsapp-button {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+
+    .whatsapp-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .toggle-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.steps-list li {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.steps-list li i {
+  color: #007bff;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+/* Google Maps button */
+.social-button.google-maps {
+  background: #34A853; /* Google Green */
+}
+.social-button.google-maps:hover {
+  background: #2c8c45;
+}
+
+/* Instagram button */
+.social-button.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.social-button.instagram:hover {
+  opacity: 0.9;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
