@@ -380,3 +380,12 @@ footer p {
   color: #bbb;
 }
 
+ .highlight-text {
+    font-size: 20px; /* slightly smaller than default h2 */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #42e695);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 15px 0;
+  }
